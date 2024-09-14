@@ -14,9 +14,8 @@ function clickElementWithDelay(xpath) {
     if (element) {
         console.log('Clicking on element with XPath: ' + xpath);
         var delay = Math.random() * 12500 + 3000; // Random delay between 3 and 15.5 seconds
+        element.click();
         setTimeout(function () {
-            element.click();
-            console.log('Clicked woodcutting element');
         }, delay);
     } else {
         console.warn('Element not found for XPath:', xpath);
