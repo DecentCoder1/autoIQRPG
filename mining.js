@@ -15,7 +15,6 @@ function clickElementWithDelay(xpath) {
         console.log('Clicking on element with XPath: ' + xpath);
         var delay = Math.random() * 12500 + 3000; // Random delay between 3 and 15.5 seconds
         element.click();
-        console.log('Clicked mining element');
         setTimeout(function () {
         }, delay);
     } else {
